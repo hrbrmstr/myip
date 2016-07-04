@@ -1,9 +1,21 @@
 Package: myip
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
+Title: Tools to Determine Your Public 'IP' Address
+Version: 0.1.0.9000
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.3.1)
-License: AGPL + file LICENSE
+Description: It is often necessary to know the 'IPv4' and/or 'IPv6'
+    external addresses of a workstation for 'API' calls. Functions are
+    provided to use one or more external services to accomplish this task
+    along with a wrapper function that can return results from multiple
+    services or use a random service.
+Depends:
+    R (>= 3.0.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests:
+    testthat
+Imports:
+    httr,
+    jsonlite,
+    xml2
+RoxygenNote: 5.0.1
