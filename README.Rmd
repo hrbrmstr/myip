@@ -12,8 +12,9 @@ knitr::opts_chunk$set(
 )
 ```
 
+`myip`: Tools to Determine Your Public 'IP' Address(es)
 
-myip is ...
+It is often necessary to know the 'IPv4' and/or 'IPv6' external addresses of a workstation for 'API' calls. Functions are provided to use one or more external services to accomplish this task along with a wrapper function that can return results from multiple services or use a random service.
 
 The following functions are implemented:
 

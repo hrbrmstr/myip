@@ -1,61 +1,60 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+`myip`: Tools to Determine Your Public 'IP' Address(es)
 
-
-
-[![Build Status](https://travis-ci.org/hrbrmstr/myip.svg)](https://travis-ci.org/hrbrmstr/myip) 
-![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/0.1.0/concept.svg)](http://www.repostatus.org/#concept)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/myip)](http://cran.r-project.org/web/packages/myip) 
-![downloads](http://cranlogs.r-pkg.org/badges/grand-total/myip)
-
-myip is ...
+It is often necessary to know the 'IPv4' and/or 'IPv6' external addresses of a workstation for 'API' calls. Functions are provided to use one or more external services to accomplish this task along with a wrapper function that can return results from multiple services or use a random service.
 
 The following functions are implemented:
 
-The following data sets are included:
+-   `akamai`: Use whatismyip.akamai.com to retrieve public IP address
+-   `amazon`: Use checkip.amazonaws.com to retrieve public IP address
+-   `httpbin`: Use httpbin.org to retrieve public IP address
+-   `icanhazip`: Use icanhazip to retrieve public IP address
+-   `ifcfgme`: Use ifcfg.me to retrieve public IP address
+-   `ipecho`: Use ipecho.net/plain to retrieve public IP address
+-   `ipinfo`: Use ipinfo.io/ip to retrieve public IP address
+-   `myip`: Wrapper function for getting your IP address
+-   `opendns`: Use checkip.dyndns.org to retrieve public IP address
+-   `shuffit`: Use shtuff.it/myip/short retrieve public IP address
 
 ### Installation
 
-
-```r
+``` r
 devtools::install_github("hrbrmstr/myip")
 ```
 
-
-
 ### Usage
 
-
-```r
+``` r
 library(myip)
-#> Error in library(myip): there is no package called 'myip'
 
 # current verison
 packageVersion("myip")
-#> Error in packageVersion("myip"): package 'myip' not found
+#> [1] '0.1.0.9000'
+
+akamai()
+#> Public IPv4 Address: 50.252.233.22
+
+httpbin()
+#> Public IPv4 Address: 50.252.233.22
 ```
 
 ### Test Results
 
-
-```r
+``` r
 library(myip)
-#> Error in library(myip): there is no package called 'myip'
 library(testthat)
 
 date()
-#> [1] "Mon Jul  4 17:01:39 2016"
+#> [1] "Mon Jul  4 18:10:36 2016"
 
 test_dir("tests/")
-#> Error in library(myip): there is no package called 'myip'
+#> testthat results ========================================================================================================
+#> OK: 0 SKIPPED: 0 FAILED: 0
 #> 
 #> DONE ===================================================================================================================
 ```
 
 ### Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
-By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
