@@ -15,7 +15,8 @@ BugReports: https://gitlab.com/hrbrmstr/myip/issues
 Encoding: UTF-8
 LazyData: true
 Suggests:
-    testthat
+    testthat,
+    covr
 Imports:
     httr,
     jsonlite,
