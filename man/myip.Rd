@@ -2,9 +2,13 @@
 % Please edit documentation in R/myip.r
 \name{myip}
 \alias{myip}
+\alias{ip_external}
 \title{Wrapper function for getting your IP address}
 \usage{
 myip(select = c("random", "all", "akamai", "amazon", "httpbin",
+  "icanhazip", "ipecho", "ipinfo", "opendns"))
+
+ip_external(select = c("random", "all", "akamai", "amazon", "httpbin",
   "icanhazip", "ipecho", "ipinfo", "opendns"))
 }
 \arguments{

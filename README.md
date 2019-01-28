@@ -1,6 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Travis-CI Build
+Status](https://travis-ci.org/hrbrmstr/myip.svg?branch=master)](https://travis-ci.org/hrbrmstr/myip)
+[![Coverage
+Status](https://codecov.io/gh/hrbrmstr/myip/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/myip)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/myip)](https://cran.r-project.org/package=myip)
+
 # myip
 
 Tools to Determine Your Public ‘IP’ Address(es)
@@ -17,13 +23,13 @@ random service.
 
 The following functions are implemented:
 
+  - `myip`/`ip_external`: Wrapper function for getting your IP address
   - `akamai`: Use whatismyip.akamai.com to retrieve public IP address
   - `amazon`: Use checkip.amazonaws.com to retrieve public IP address
   - `httpbin`: Use httpbin.org to retrieve public IP address
   - `icanhazip`: Use icanhazip to retrieve public IP address
   - `ipecho`: Use ipecho.net/plain to retrieve public IP address
   - `ipinfo`: Use ipinfo.io/ip to retrieve public IP address
-  - `myip`: Wrapper function for getting your IP address
   - `opendns`: Use checkip.dyndns.org to retrieve public IP address
 
 ## Installation
@@ -76,8 +82,8 @@ myip("all")
 
 | Lang | \# Files |  (%) | LoC |  (%) | Blank lines |  (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | ---: | ----------: | ---: | -------: | ---: |
-| R    |       14 | 0.93 | 104 | 0.86 |          65 | 0.75 |       97 | 0.73 |
-| Rmd  |        1 | 0.07 |  17 | 0.14 |          22 | 0.25 |       35 | 0.27 |
+| R    |       14 | 0.93 | 106 | 0.86 |          66 | 0.75 |       98 | 0.72 |
+| Rmd  |        1 | 0.07 |  17 | 0.14 |          22 | 0.25 |       38 | 0.28 |
 
 ## Code of Conduct
 

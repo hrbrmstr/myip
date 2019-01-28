@@ -36,3 +36,7 @@ myip <- function(select=c("random", "all", "akamai",
   return(match.fun())
 
 }
+
+#' @rdname myip
+#' @export
+ip_external <- myip

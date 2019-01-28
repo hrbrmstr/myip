@@ -4,3 +4,5 @@
 * Removed shtuff.it as the service no longer exists
 * Removed ifcfg.me due to major SSL certificate issues
 * Added service name to print output
+* Added basic tests
+* Setup Travis/coverage

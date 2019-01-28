@@ -15,6 +15,9 @@ knitr::opts_chunk$set(
 
 options(width=120)
 ```
+[![Travis-CI Build Status](https://travis-ci.org/hrbrmstr/myip.svg?branch=master)](https://travis-ci.org/hrbrmstr/myip)
+[![Coverage Status](https://codecov.io/gh/hrbrmstr/myip/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/myip)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/myip)](https://cran.r-project.org/package=myip)
 
 # myip
 
@@ -28,13 +31,13 @@ It is often necessary to know the 'IPv4' and/or 'IPv6' external addresses of a w
 
 The following functions are implemented:
 
+- `myip`/`ip_external`:	Wrapper function for getting your IP address
 - `akamai`:	Use whatismyip.akamai.com to retrieve public IP address
 - `amazon`:	Use checkip.amazonaws.com to retrieve public IP address
 - `httpbin`:	Use httpbin.org to retrieve public IP address
 - `icanhazip`:	Use icanhazip to retrieve public IP address
 - `ipecho`:	Use ipecho.net/plain to retrieve public IP address
 - `ipinfo`:	Use ipinfo.io/ip to retrieve public IP address
-- `myip`:	Wrapper function for getting your IP address
 - `opendns`:	Use checkip.dyndns.org to retrieve public IP address
 
 ## Installation
