@@ -8,12 +8,15 @@
 icanhazip <- function() {
 
   req4 <- httr::GET("https://ipv4.icanhazip.com/")
-  req6 <- httr::GET("https://ipv6.icanhazip.com/")
-
   res4 <- trimws.int(httr::content(req4, as="text", encoding="UTF-8"))
-  res6 <- trimws.int(httr::content(req6, as="text", encoding="UTF-8"))
+  ret <- list(ipv4 = ipv4(res4))
 
-  ret <- list(ipv4=ipv4(res4), ipv6=ipv6(res6))
+  req6 <- try(httr::GET("https://ipv6.icanhazip.com/"), silent = TRUE)
+  if (!inherits(req6, "try-error")) {
+    res6 <- trimws.int(httr::content(req6, as="text", encoding="UTF-8"))
+    ret[["ipv6"]] <-  ipv6(res6)
+  }
+
   class(ret) <- c("myip", class(ret))
 
   return(ret)

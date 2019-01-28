@@ -9,4 +9,3 @@ akamai()
 \description{
 Use whatismyip.akamai.com to retrieve public IP address
 }
-

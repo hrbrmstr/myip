@@ -4,8 +4,8 @@
 \alias{myip}
 \title{Wrapper function for getting your IP address}
 \usage{
-myip(select = c("random", "all", "akamai", "amazon", "httpbin", "icanhazip",
-  "ifcfgme", "ipecho", "ipinfo", "opendns", "shuffit"))
+myip(select = c("random", "all", "akamai", "amazon", "httpbin",
+  "icanhazip", "ipecho", "ipinfo", "opendns"))
 }
 \arguments{
 \item{select}{if \code{random} a random service will be
@@ -23,4 +23,3 @@ a \code{list} classed as \code{myip} with two
 \description{
 Wrapper function for getting your IP address
 }
-

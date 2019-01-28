@@ -9,4 +9,3 @@ ipinfo()
 \description{
 Use ipinfo.io/ip to retrieve public IP address
 }
-

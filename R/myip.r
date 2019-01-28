@@ -12,11 +12,10 @@
 #' @export
 myip <- function(select=c("random", "all", "akamai",
                           "amazon", "httpbin", "icanhazip",
-                          "ifcfgme", "ipecho",
-                          "ipinfo", "opendns", "shuffit")) {
+                          "ipecho", "ipinfo", "opendns")) {
 
-  svcs <- c("akamai", "amazon", "httpbin", "icanhazip", "ifcfgme",
-            "ipecho", "ipinfo", "opendns", "shuffit")
+  svcs <- c("akamai", "amazon", "httpbin", "icanhazip",
+            "ipecho", "ipinfo", "opendns")
 
   choice <- match.arg(select, c("random", "all", svcs))
 

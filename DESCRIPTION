@@ -1,6 +1,6 @@
 Package: myip
 Title: Tools to Determine Your Public 'IP' Address
-Version: 0.1.0.9000
+Version: 0.2.0
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
 Description: It is often necessary to know the 'IPv4' and/or 'IPv6'
     external addresses of a workstation for 'API' calls. Functions are
@@ -10,6 +10,8 @@ Description: It is often necessary to know the 'IPv4' and/or 'IPv6'
 Depends:
     R (>= 3.0.0)
 License: MIT + file LICENSE
+URL: https://gitlab.com/hrbrmstr/myip
+BugReports: https://gitlab.com/hrbrmstr/myip/issues
 Encoding: UTF-8
 LazyData: true
 Suggests:
@@ -18,4 +20,4 @@ Imports:
     httr,
     jsonlite,
     xml2
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1

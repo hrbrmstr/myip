@@ -9,4 +9,3 @@ opendns()
 \description{
 Use checkip.dyndns.org to retrieve public IP address
 }
-

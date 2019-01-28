@@ -14,4 +14,3 @@ services or use a random service.
 \author{
 Bob Rudis (@hrbrmstr)
 }
-

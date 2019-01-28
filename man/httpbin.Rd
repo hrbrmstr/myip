@@ -9,4 +9,3 @@ httpbin()
 \description{
 Use httpbin.org to retrieve public IP address
 }
-

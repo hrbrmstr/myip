@@ -9,4 +9,3 @@ ipecho()
 \description{
 Use ipecho.net/plain to retrieve public IP address
 }
-

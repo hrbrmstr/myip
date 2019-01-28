@@ -9,4 +9,3 @@ amazon()
 \description{
 Use checkip.amazonaws.com to retrieve public IP address
 }
-

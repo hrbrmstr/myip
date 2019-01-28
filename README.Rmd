@@ -6,15 +6,25 @@ output: github_document
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE,
   collapse = TRUE,
-  comment = "#>",
+  comment = "##",
   fig.path = "README-"
 )
+
+options(width=120)
 ```
 
-`myip`: Tools to Determine Your Public 'IP' Address(es)
+# myip
+
+Tools to Determine Your Public 'IP' Address(es)
+
+## Description
 
 It is often necessary to know the 'IPv4' and/or 'IPv6' external addresses of a workstation for 'API' calls. Functions are provided to use one or more external services to accomplish this task along with a wrapper function that can return results from multiple services or use a random service.
+
+## What's Inside The Tin?
 
 The following functions are implemented:
 
@@ -22,24 +32,22 @@ The following functions are implemented:
 - `amazon`:	Use checkip.amazonaws.com to retrieve public IP address
 - `httpbin`:	Use httpbin.org to retrieve public IP address
 - `icanhazip`:	Use icanhazip to retrieve public IP address
-- `ifcfgme`:	Use ifcfg.me to retrieve public IP address
 - `ipecho`:	Use ipecho.net/plain to retrieve public IP address
 - `ipinfo`:	Use ipinfo.io/ip to retrieve public IP address
 - `myip`:	Wrapper function for getting your IP address
 - `opendns`:	Use checkip.dyndns.org to retrieve public IP address
-- `shuffit`:	Use shtuff.it/myip/short retrieve public IP address
 
-### Installation
+## Installation
 
 ```{r eval=FALSE}
-devtools::install_github("hrbrmstr/myip")
+devtools::install_git("https://git.sr.ht/~hrbrmstr/myip")
+# OR
+devtools::install_git("https://gitlab.com/hrbrmstr/myip")
+# OR
+devtools::install_git("https://github.com/hrbrmstr/myip")
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
-options(width=120)
-```
-
-### Usage
+## Usage
 
 ```{r}
 library(myip)
@@ -50,20 +58,17 @@ packageVersion("myip")
 akamai()
 
 httpbin()
+
+myip("all")
 ```
 
-### Test Results
+## myip Metrics
 
-```{r}
-library(myip)
-library(testthat)
-
-date()
-
-test_dir("tests/")
+```{r cloc, echo=FALSE}
+cloc::cloc_pkg_md()
 ```
 
-### Code of Conduct
+## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
 By participating in this project you agree to abide by its terms.

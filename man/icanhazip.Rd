@@ -10,4 +10,3 @@ icanhazip()
 This service can return both IPv4 and IPv6 addresses
 and also operates over \code{https}.
 }
-

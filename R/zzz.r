@@ -1,7 +1,11 @@
 #' @export
 print.myip <- function(x, ...) {
-  if (length(x$ipv4>0)) cat(sprintf("Public IPv4 Address: %s\n", x$ipv4))
-  if (length(x$ipv6>0)) cat(sprintf("Public IPv6 Address: %s\n", x$ipv6))
+  if (length(x$ipv4>0)) cat(
+    sprintf("(%s) Public IPv4 Address: %s\n", attr(x, "service"), x$ipv4)
+  )
+  if (length(x$ipv6>0)) cat(
+    sprintf("(%s) Public IPv6 Address: %s\n", attr(x, "service"), x$ipv6)
+  )
 }
 
 trimws.int <- function(x, which = c("both", "left", "right")) {
